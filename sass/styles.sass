@@ -1,13 +1,69 @@
 @charset "utf-8"
 @import "../bulma/bulma.sass"
 
+
+
 a
 	text-decoration: underline
-a:link
-	color: cyan
-a:visited
-	color: hotpink
-a:hover
-	color: blue
-a:active
-	color: lime
+	&:link
+		color: cyan
+	&:visited
+		color: hotpink
+	&:hover
+		color: yellow
+	&:active
+		color: lime
+
+
+
+.portfolio-box-section
+	@extend .box
+	@extend .has-background-grey-darker
+
+.portfolio-box-item
+	@extend .box
+	@extend .has-background-black-ter
+
+.portfolio-columns
+	@extend .columns
+	@extend .is-centered
+	@extend .is-multiline
+	@extend .is-vcentered
+
+.portfolio-columns-reverse
+	@extend .portfolio-columns
+	@media(min-width: $tablet)
+		flex-direction: row-reverse
+
+.portfolio-column
+	@extend .column
+	@extend .is-half
+	@extend .has-text-light
+
+.portfolio-title
+	@extend .is-3
+	@extend .title
+	@extend .has-text-light
+	@extend .has-text-centered
+	@extend .has-text-weight-bold
+
+.portfolio-subtitle
+	@extend .is-4
+	@extend .subtitle
+	@extend .has-text-light
+	@extend .has-text-weight-bold
+	.portfolio-columns-reverse &
+		@media(min-width: $tablet)
+			float: right !important
+
+.portfolio-button
+	@extend .button
+	@extend .m-1
+	@extend .is-primary
+	@extend .has-text-dark
+	@extend .has-text-weight-bold
+	@media(min-width: $tablet)
+		.portfolio-columns &
+			float: right !important
+		.portfolio-columns-reverse &
+			float: left !important
