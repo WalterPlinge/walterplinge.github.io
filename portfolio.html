@@ -11,12 +11,15 @@
 	<body class="has-background-grey-dark has-text-light">
 
 		<!-- header -->
-		<section class="hero is-primary">
+		<section class="hero is-primary is-small">
 			<div class="hero-body">
 				<div class="container">
 					<h1 class="title is-1 has-text-weight-bold">
 						Portfolio
 					</h1>
+				</div>
+				<div class="container block">
+					<a href="index.html">Home</a>
 				</div>
 			</div>
 		</section>
@@ -50,7 +53,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image is-2by1">
-										<img src="img/rtic_w1024_h512_s32_d32_109s.png" alt="Failed to load image..."/>
+										<img src="img/rtic_w1024_h512_s32_d32_109s.png" alt="Loading image..."/>
 									</figure>
 								</div>
 
@@ -89,7 +92,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image is-1by1">
-										<img src="img/audio visualiser_alt.png" alt="Failed to load image..."/>
+										<img src="img/audio visualiser_alt.png" alt="Loading image..."/>
 									</figure>
 								</div>
 
@@ -138,7 +141,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image has-ratio">
-										<img src="img/graphics_playground.png" alt="Failed to load image..."/>
+										<img src="img/graphics_playground.png" alt="Loading image..."/>
 									</figure>
 								</div>
 
@@ -161,35 +164,52 @@
 						</div>
 					</div>
 
-					<!-- odin netpbm library -->
+				</div>
+			</div>
+		</section>
+
+		<!-- games -->
+		<section class="section">
+			<div class="container">
+				<div class="portfolio-box-section">
+
+					<!-- title -->
+					<h2 class="portfolio-title">
+						Games
+					</h2>
+
+					<!-- wasm4 -->
 					<div class="block">
 						<div class="portfolio-box-item">
 							<div class="portfolio-columns-reverse">
 
 								<div class="portfolio-column">
 									<p class="portfolio-subtitle">
-										Odin Netpbm Library (and OSS)
+										Wasm-4 Console
 									</p>
 								</div>
 
 								<div class="portfolio-column">
-									<a class="portfolio-button" href="https://github.com/odin-lang/Odin/tree/master/core/image/netpbm">
-										GitHub
-									</a>
 								</div>
 
 								<div class="portfolio-column">
 									<figure class="image has-ratio">
-										<img src="img/netpbm_contrib.png" alt="Failed to load image..."/>
+										<img src="img/wasm4.jpg" alt="Loading image...">
 									</figure>
 								</div>
 
 								<div class="portfolio-column">
 									<div class="block">
-										This is me being excited to contribute code to a project that I like, specifically the <a href="https://odin-lang.org/">Odin programming language</a> core library. I wrote a Netpbm image file format reader/writer, covering ALL the official formats (PBM, PGM, PPM, PAM), and even the unofficial PFM.
+										"<a href="https://wasm4.org/">WASM-4</a> is a low-level fantasy game console for building small games with WebAssembly."
 									</div>
 									<div class="block">
-										This is alongside other contributions such as expanding the Vulkan vendor package to simplify loading all the Vulkan procedures, and minor core library touch-ups and quality-of-life additions here and there.
+										I've had a lot of fun playing around with ideas on this console. It's really easy to get started, and the limitation add an extra dimension of creativity.
+									</div>
+									<div class="block">
+										Several of my projects with this have been recreating simple ideas from games, such as Flappy Bird (or Frog, as I did) gameplay, a bloons-style map and rail system, and the fishing minigame from Club Penguin.
+									</div>
+									<div class="block">
+										These pictures are of some of my own ideas: a minigolf game experimenting with tilemaps, and a pixel-art paint application playing with the 4 colour limitation.
 									</div>
 								</div>
 
@@ -201,20 +221,62 @@
 			</div>
 		</section>
 
-		<!-- extras -->
+		<!-- Other -->
 		<section class="section">
 			<div class="container">
 				<div class="portfolio-box-section">
 
 					<!-- title -->
 					<h2 class="portfolio-title">
-						Extras
+						Other
 					</h2>
 
-					<!-- rtic -->
+					<!-- this website -->
 					<div class="block">
 						<div class="portfolio-box-item">
 							<div class="portfolio-columns">
+
+								<div class="portfolio-column">
+									<p class="portfolio-subtitle">
+										Websites
+									</p>
+								</div>
+
+								<div class="portfolio-column">
+									<a class="portfolio-button" href="https://github.com/WalterPlinge/walterplinge.github.io">
+										GitHub
+									</a>
+								</div>
+
+								<div class="portfolio-column">
+									<figure class="image has-ratio">
+										<img src="img/web-dev.jpg">
+									</figure>
+								</div>
+
+								<div class="portfolio-column">
+									<div class="block">
+										For this website I wanted to keep simple, functional, fast. So it's written entirely from scratch! Well, not entirely, I'm using <a href="https://bulma.io/">Bulma</a> to help with styling, although I've added a few additions myself for page structure. Apart from that, the design and implementation is minimal, elegant, and straight-to-the-point. I do quite like it.
+									</div>
+									<div class="block">
+										I've made websites before, in University I made 2 for my Advanced Web Development module. Both were dynamic sites, serving templated pages from a python app, using HTML/CSS/JavaScript and backed by a database. Unfortunately those aren't being hosted anymore.
+									</div>
+									<div class="block">
+										The first was a music website that displays information about artists, albums, songs, and genres. One of the most fun parts was working out how I could store all that information in a simple way, and then programming the backend to link them all up when it filled out the templates. Made it really easy to navigate around the information. Of course, the other fun part was designing it to be user-friendly, a simple interface for a simple website. It never broke.
+									</div>
+									<div class="block">
+										The second was an image sharing website. This was more involved, as I added the ability to create and manage user accounts, and allowed users to upload and manage their own content, as well as add comments on other users' posts. Again, the fun part was working out how the data should be stored, and how the backend was going to manage it all. It came together nicely, keeping the code neatly simple for the complexity of the site.
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- windaynight -->
+					<div class="block">
+						<div class="portfolio-box-item">
+							<div class="portfolio-columns-reverse">
 
 								<div class="portfolio-column">
 									<p class="portfolio-subtitle">
@@ -233,7 +295,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image has-ratio">
-										<img src="img/windows-dark-light.jpg" alt="Failed to load image..."/>
+										<img src="img/windows-dark-light.jpg" alt="Loading image..."/>
 									</figure>
 								</div>
 
@@ -243,6 +305,42 @@
 									</div>
 									<div class="block">
 										The first try included an unwieldly command for Windows' Task Scheduler. So I made this application that would toggle the theme, and added a couple flags so I could call this on schedule instead. It works like a charm.
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- odin netpbm library -->
+					<div class="block">
+						<div class="portfolio-box-item">
+							<div class="portfolio-columns">
+
+								<div class="portfolio-column">
+									<p class="portfolio-subtitle">
+										Odin Netpbm Library (and OSS)
+									</p>
+								</div>
+
+								<div class="portfolio-column">
+									<a class="portfolio-button" href="https://github.com/odin-lang/Odin/tree/master/core/image/netpbm">
+										GitHub
+									</a>
+								</div>
+
+								<div class="portfolio-column">
+									<figure class="image has-ratio">
+										<img src="img/netpbm_contrib.png" alt="Loading image..."/>
+									</figure>
+								</div>
+
+								<div class="portfolio-column">
+									<div class="block">
+										This is me being excited to contribute code to a project that I like, specifically the <a href="https://odin-lang.org/">Odin programming language</a> core library. I wrote a Netpbm image file format reader/writer, covering ALL the official formats (PBM, PGM, PPM, PAM), and even the unofficial PFM.
+									</div>
+									<div class="block">
+										This is alongside other contributions such as expanding the Vulkan vendor package to simplify loading all the Vulkan procedures, and minor core library touch-ups and quality-of-life additions here and there.
 									</div>
 								</div>
 
@@ -269,7 +367,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image has-ratio">
-										<img src="img/aoc.png" alt="Failed to load image..."/>
+										<img src="img/aoc.png" alt="Loading image..."/>
 									</figure>
 								</div>
 
@@ -308,7 +406,7 @@
 
 								<div class="portfolio-column">
 									<figure class="image has-ratio">
-										<img src="img/duplicate-file-finder.jpg" alt="Failed to load image..."/>
+										<img src="img/duplicate-file-finder.jpg" alt="Loading image..."/>
 									</figure>
 								</div>
 
