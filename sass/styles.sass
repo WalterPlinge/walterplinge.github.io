@@ -1,5 +1,5 @@
 @charset "utf-8"
-@import "../bulma/bulma.sass"
+@import "bulma/bulma.sass"
 
 
 
@@ -52,8 +52,10 @@ a
 	@extend .subtitle
 	@extend .has-text-light
 	@extend .has-text-weight-bold
-	.portfolio-columns-reverse &
-		@media(min-width: $tablet)
+	@media(min-width: $tablet)
+		.portfolio-columns &
+			float: left !important
+		.portfolio-columns-reverse &
 			float: right !important
 
 .portfolio-button
