@@ -67,6 +67,16 @@ portfolio_content = {
 	],
 	'Games': [
 		(
+			'Sunken',
+			[('GitHub', 'https://github.com/WalterPlinge/sunken')],
+			'sunken.png',
+			[
+				'''A game where you play as a submarine, in the midst of the deep, dark ocean. Your task is to find and destroy a secret base, but beware! You are not alone.''',
+				'''The main concept behind Sunken is centered around how submarines see. Deep under the waves, there are no windows, let alone light, so they rely on sound. You can only know what's out there, if you can HEAR what's out there. The way submarines achieve this is with SONAR, either passively listening, or actively creating noise and listening for echos. The problem with creating sound is that the something else out there can hear you too.''',
+				'''This concept has a lot of potential for creating a mysterious, and even scary, atmosphere. Sunken takes inspiration from the 3D submarine game "Cold Waters", a game with an intense ambience. Sunken tries to replicate the feeling of being alone in silence by making the player rely on SONAR to locate points of interest. This means you'll have to go hunting for loot, but you may also hear that you aren't alone.''',
+			],
+		),
+		(
 			'Wasm-4 Console',
 			[],
 			'wasm4.jpg',
@@ -84,7 +94,8 @@ portfolio_content = {
 			[('GitHub', 'https://github.com/WalterPlinge/walterplinge.github.io')],
 			'web_dev.jpg',
 			[
-				'''For this website I wanted to keep simple, functional, fast. So it's written entirely from scratch! Well, not entirely, I'm using <a href="https://bulma.io/">Bulma</a> to help with styling, although I've added a few additions myself for page structure. Apart from that, the design and implementation is minimal, elegant, and straight-to-the-point. I do quite like it.''',
+				'''For this website I wanted to keep simple, functional, fast. So it's written entirely from scratch! I'm using <a href="https://bulma.io/">Bulma</a> to help with styling, although I've added a few additions myself for page structure. Apart from that, the design and implementation is minimal, elegant, and straight-to-the-point. I do quite like it.''',
+				'''I am also using a custom GitHub build script; this site is generated! This is so I can have an easier and more consistent way to deal with the content. And I get to keep my custom structuring, which is also easier to edit since I can update something once and it changes for the whole site.''',
 				'''I've made websites before, in University I made 2 for my Advanced Web Development module. Both were dynamic sites, serving templated pages from a python app, using HTML/CSS/JavaScript and backed by a database. Unfortunately those aren't being hosted anymore.''',
 				'''The first was a music website that displays information about artists, albums, songs, and genres. One of the most fun parts was working out how I could store all that information in a simple way, and then programming the backend to link them all up when it filled out the templates. Made it really easy to navigate around the information. Of course, the other fun part was designing it to be user-friendly, a simple interface for a simple website.''',
 				'''The second was an image sharing website. This was more involved, as I added the ability to create and manage user accounts, and allowed users to upload and manage their own content, as well as add comments on other users' posts. Again, the fun part was working out how the data should be stored, and how the backend was going to manage it all. It came together nicely, keeping the code neatly simple for the complexity of the site.''',
