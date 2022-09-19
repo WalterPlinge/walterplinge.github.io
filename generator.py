@@ -107,7 +107,7 @@ portfolio_content = {
 				('GitHub', 'https://github.com/WalterPlinge/windaynight'),
 				('Handmade Network', 'https://handmade.network/p/273/windaynight/'),
 			],
-			'windows_dark_light.jpg',
+			'windaynight.png',
 			[
 				'''This is a little tool I wrote to toggle the Windows' system & app themes between light and dark mode. I wanted to have the light theme in the day so I could see what I was doing, and I'd have a dark theme at night to be easier on the eyes.''',
 				'''The first try included an unwieldly command for Windows' Task Scheduler. So I made this application that would toggle the theme, and added a couple flags so I could call this on schedule instead. It works like a charm.''',
