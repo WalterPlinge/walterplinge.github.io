@@ -2,8 +2,9 @@ index_content = {
 	'about': (
 		'Hello there',
 		[
-			'''My name is Scott. I'm a programmer, interested in low-level code, graphics, and game development.''',
-			'''This is my site for sharing information about projects I've worked on among other things.''',
+			'''My name is Scott. I'm a programmer interested in game development and various surrounding technologies, such as graphics and visualisations, data structures and algorithms, and a range of low-level to high-level concepts.''',
+			'''I graduated from Edinburgh Napier University with a 1st class Bachelor of Science with Honours in Game Development.''',
+			'''This is my site for sharing information about things that I've done and projects I've worked on.''',
 		]
 	),
 	'links': (
@@ -67,6 +68,17 @@ portfolio_content = {
 	],
 	'Games': [
 		(
+			'Space Racer',
+			[('GitHub', 'https://github.com/WalterPlinge/SpaceRacer')],
+			'spaceracer.png',
+			[
+				'''This was a project I worked on in University, as a group project with a team of 6: I was one of two gameplay programmers, working alongside an artist, a 3d modeller, a map designer, and organised by the project manager.''',
+				'''I worked with several systems within the game, such as gameplay features like movement, physics, and the boost mechanic. I also implemented some UI features, and handled the sound design.''',
+				'''One of my favourite achievements in my role of programmer was debugging and fixing a problem with the physics. We already had the vehicle following a basic track, but after we added a section that went upside down, the vehicle would get stuck trying to correct its orientation and would start spinning wildly. The issue turned out to be that it was naively calculating a cross product, which happened to invert when the vehicle's up vector was pointing down in world space. I implemented a fix, and then development carried on with our orientation-agnostic driving!''',
+				'''I also created the music for the game. Since I was handling the sound design, I decided to take on the role of composer, which allowed me to also focus on other design aspects, such as exploring the themes of the game and what does and doesn't fit the style.''',
+			],
+		),
+		(
 			'Sunken',
 			[('GitHub', 'https://github.com/WalterPlinge/sunken')],
 			'sunken.png',
@@ -94,11 +106,11 @@ portfolio_content = {
 			[('GitHub', 'https://github.com/WalterPlinge/walterplinge.github.io')],
 			'web_dev.jpg',
 			[
-				'''For this website I wanted to keep simple, functional, fast. So it's written entirely from scratch! I'm using <a href="https://bulma.io/">Bulma</a> to help with styling, although I've added a few additions myself for page structure. Apart from that, the design and implementation is minimal, elegant, and straight-to-the-point. I do quite like it.''',
-				'''I am also using a custom GitHub build script; this site is generated! This is so I can have an easier and more consistent way to deal with the content. And I get to keep my custom structuring, which is also easier to edit since I can update something once and it changes for the whole site.''',
-				'''I've made websites before, in University I made 2 for my Advanced Web Development module. Both were dynamic sites, serving templated pages from a python app, using HTML/CSS/JavaScript and backed by a database. Unfortunately those aren't being hosted anymore.''',
-				'''The first was a music website that displays information about artists, albums, songs, and genres. One of the most fun parts was working out how I could store all that information in a simple way, and then programming the backend to link them all up when it filled out the templates. Made it really easy to navigate around the information. Of course, the other fun part was designing it to be user-friendly, a simple interface for a simple website.''',
-				'''The second was an image sharing website. This was more involved, as I added the ability to create and manage user accounts, and allowed users to upload and manage their own content, as well as add comments on other users' posts. Again, the fun part was working out how the data should be stored, and how the backend was going to manage it all. It came together nicely, keeping the code neatly simple for the complexity of the site.''',
+				'''For this website I wanted to keep simple, functional, and fast. I'm using <a href="https://bulma.io/">Bulma</a> to help with styling, and I've added a few additions for page structure. Apart from that, the design and implementation is minimal and straight-to-the-point. I do quite like it.''',
+				'''I am also using a custom GitHub build script; this site is generated! This is so I can have an easier and more consistent way to deal with the content. It's also easier to edit my custom styling, since I can update something once and it changes for the whole page.''',
+				'''In University I made two websites for my Advanced Web Development module. Both were dynamic sites, serving templated pages from a python flask app, using HTML/CSS/JavaScript and backed by a database. (Unfortunately those aren't being hosted anymore.)''',
+				'''The first was a music website that displays information about artists, albums, songs, and genres. One of the most enjoyable parts was working out how I could store all that information in a simple way, so that I could also help the app to fill out the templates more easily. This also helped me focus on the navigation for users and designing it to be user-friendly.''',
+				'''The second was an image sharing website. This was more involved, as I added the ability to create and manage user accounts, and allowed users to upload and manage their own content, as well as add comments on other users' posts. Again, the fun part was working out how the data should be stored, and how the backend was going to manage it all. It worked well at keeping unnecessary complexity out of the code.''',
 			],
 		),
 		(
