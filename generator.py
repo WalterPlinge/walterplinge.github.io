@@ -8,7 +8,7 @@ import markdown2
 
 
 def format_html(html):
-	html = re.sub('\n\s*', '', html) # remove newline and leading spaces
+	html = re.sub('\s*\n\s*', '\n', html) # remove newline and leading spaces
 	return html
 
 def format_css(css):
@@ -42,7 +42,7 @@ style = pathlib.Path('css/simple.css').read_text()
 style += pathlib.Path('css/custom.css').read_text()
 style = format_css(style)
 
-markdown_extras = ['tables', 'header-ids']
+markdown_extras = ['tables', 'header-ids', 'fenced-code-blocks']
 
 file_paths = []
 for (root, directories, files) in os.walk('pages'):

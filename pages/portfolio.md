@@ -6,6 +6,7 @@ banner: My Projects
 
 ## What You'll Find
 
+- [**Bootstrapping**](#bootstrapping)
 - [**Graphics**](#graphics)
 	- [Ray Tracer in C](#ray-tracer)
 	- [Audio Visualiser](#audio-visualiser)
@@ -20,6 +21,39 @@ banner: My Projects
 	- [OSS (Netpbm)](#oss-netpbm)
 	- [Advent of Code](#advent-of-code)
 	- [Duplicate File Finder](#duplicate-finder)
+
+
+
+<br>
+<div class="portfolio-header">
+	<h3 class="portfolio-title" id="bootstrapping">Bootstrapping</h3>
+</div>
+
+My goal is to build up to a high-level development environment starting from a minimal environment.
+Using a 495-byte handwritten executable that just parses octal to a buffer and has access only to an input stream,
+so far I've managed to bootstrap into my own rudimentary assembly language, and from there into a basic FORTH environment.
+
+Further plans are to try implementing other programming paradigms seen in languages like LISP, APL, and C.
+
+These code snippets are runnable code in each stage (octal, assembly, forth) that will call sys_exit with the status code 42:
+
+```
+110 307 300 347 000 000 000 # mov rax, 347q ; sys_exit_group
+110 307 307 052 000 000 000 # mov rdi, 42   ; status code
+017 005                     # syscall
+^                           # execute the buffer code
+```
+
+```
+:mover7 52 0 0 0 # status code 42 (oct 52)
+<sysexit         # the sys_exit call
+^                # execute the buffer code
+```
+
+```
+: exit42   42 sys_exit ; # make word to push 42 and call exit
+exit42                   # execute word
+```
 
 
 
